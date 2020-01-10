@@ -161,45 +161,54 @@ padding-right: 70px;
 
 .main1 {
   
-  display: grid;
-  grid-template-columns: auto auto;
+  display: block;
+  height: auto;
   margin-top: 20px;
   
 }
 
-.about1{
-  width: 70%;
+.about2{
+  width: 90%;
+  text-align: center;
  /* margin: 10px;*/
   padding-top: 20px;
   padding-left: 20px;
   padding-bottom: 20px;
-
+z-index: 5;
 }
 
 
 
-.about1 h2 {
+.about2 h2 {
   font-size: 40px;
 
 }
 
-.about1 div {
+.about2 div {
   font-size: 30px;
-  font-family: monospace;
+  font-family: monospace;  
 }
 
-.about2 {
+/*.about2 {
  padding-top: 80px;
  padding-right: 50px;
   width: 40%;
- 
-}
 
-.about2 img {
+ 
+}*/
+
+.about1 {
+  background-image: url('cyber5.png');
+  margin: auto;
+  position: absolute;
     width: 500px;
-    height: auto;
-    animation-name: move1;
-    animation-duration: 2s;
+    height: 500px;
+/*    animation-name: move1;
+    animation-duration: 2s;*/
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    opacity: 0.4;
 }
 @keyframes move1 {
   from{
@@ -209,7 +218,9 @@ padding-right: 70px;
     width: 500px;
   }
 }
-
+.main2{
+  display: block;
+}
 .main2 h2 {
   text-align: center;
   padding: 50px;
@@ -222,9 +233,10 @@ padding-right: 70px;
 }
 
 .service-item img {
-  width: 100px;
+  width: 70%;
   height: 100px;
   display: block;
+  padding-left: 50px;
 }
 
 .service-item {
@@ -232,7 +244,8 @@ padding-right: 70px;
   height: 200px;
   list-style-type: none;
   display: inline-block;
-  
+  text-align: center;
+  margin: auto;
 }
 
 
