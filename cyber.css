@@ -1,0 +1,253 @@
+body{
+	margin: 0;
+ overflow-x: hidden;
+}
+
+.myDiv {
+    position: relative;
+    z-index: 1;
+    /*text-align: center;*/
+    height: 700px;
+    color: white;
+    margin-right: 0;
+}
+
+.container {
+  position: absolute;
+  width: 100%;
+  top: 250px;
+  padding-left: 250px;
+  justify-content: center;
+  overflow-y: hidden;
+}
+
+.static{
+  
+  display: inline;
+}
+
+.dynamic{
+  margin-top: 0px;
+  margin-top: 0px;
+  display: inline;
+}
+
+.dynamic ul{
+  top:0px;
+  position: absolute;
+  padding: 0px;
+  margin-top: 0px;
+  margin-left: 50px;
+  display: inline-block;
+  list-style-type: none;
+  animation-name: change;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+}
+
+.static span{
+  color: white;
+  font-size: 80px;
+}
+
+.dynamic li {
+  font-size: 80px;
+}
+
+@keyframes change {
+   0%, 100% {transform:translate3d(0,0%,0);}
+    25.32%,75% {transform:translate3d(0,-35%,0);}
+  50%{transform:translate3d(0,-68%,0);}
+  
+}
+
+
+.myDiv p {
+	font-size: 30px;
+	line-height: 1px;
+	color: #CDE7EE;
+  text-align: center;
+  padding-top: 400px;
+
+
+}
+
+@keyframes example {
+  from{
+    transform: scale(0.8);
+    font-size: 10px;
+  }
+  to{
+    transform: scale(1);
+    font-size: 30px;}
+}
+
+.myDiv .bg {
+    position: absolute;
+    z-index: -5;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-image: url("img5.png");
+    background-repeat: no-repeat;
+  /*  background-size: cover;*/
+    opacity: 0.9;
+    width: 100%;
+    background-size: cover;
+    height: 700px;
+
+
+}
+
+@keyframes example2 {
+	from {
+		transform: scale(0.8);
+	}
+	to {
+		transform: scale(1.2);
+	}
+}
+
+.nav {
+	background-color: #095A5A ;
+	position: fixed;
+	width: 100%;
+	z-index: 5;
+
+
+}
+
+
+.nav ul {
+	position: relative;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  
+}
+
+.nav li {
+  float: right;
+}
+
+.nav li a {
+  display: block;
+/*   padding: 14px 16px;
+*/   padding-top: 30px;
+padding-bottom: 20px;
+padding-right: 70px;
+	font-size: 20px;
+  /*color: #1B4F72;*/
+  color: white;
+  text-decoration: none;
+}
+
+.footer {
+  display: block;
+  margin-bottom: 0px;
+  
+  margin-top: 50px;
+  background-color:  #095A5A;
+  
+  height: 200px;
+
+}
+
+.main {
+  background-color: white;
+}
+
+.main1 {
+  
+  display: grid;
+  grid-template-columns: auto auto;
+  margin-top: 20px;
+  
+}
+
+.about1{
+  width: 70%;
+ /* margin: 10px;*/
+  padding-top: 20px;
+  padding-left: 20px;
+  padding-bottom: 20px;
+
+}
+
+
+
+.about1 h2 {
+  font-size: 40px;
+
+}
+
+.about1 div {
+  font-size: 30px;
+  font-family: monospace;
+}
+
+.about2 {
+ padding-top: 80px;
+ padding-right: 50px;
+  width: 40%;
+ 
+}
+
+.about2 img {
+    width: 500px;
+    height: auto;
+    animation-name: move1;
+    animation-duration: 2s;
+}
+@keyframes move1 {
+  from{
+    width: 100px;
+  }
+  to{
+    width: 500px;
+  }
+}
+
+.main2 h2 {
+  text-align: center;
+  padding: 50px;
+  font-size: 50px;
+}
+
+.services {
+  width: 80%;
+  margin: auto;
+}
+
+.service-item img {
+  width: 100px;
+  height: 100px;
+  display: block;
+}
+
+.service-item {
+  width: 30%;
+  height: 200px;
+  list-style-type: none;
+  display: inline-block;
+  
+}
+
+
+.service-item div {
+  padding-top: 20px;
+  font-size: 20px;
+  display: block;
+}
+
+.main1{
+  opacity: 0;
+  transition-duration: 2s;
+}
+
+.main2{
+  opacity: 0;
+  transition-duration: 2s;
+}
