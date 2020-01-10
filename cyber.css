@@ -223,8 +223,9 @@ z-index: 5;
 }
 .main2 h2 {
   text-align: center;
-  padding: 50px;
+  padding-top: 50px;
   font-size: 50px;
+  font-family: PT Serif;
 }
 
 .services {
@@ -233,10 +234,11 @@ z-index: 5;
 }
 
 .service-item img {
-  width: 70%;
+  width: 85%;
   height: 100px;
   display: block;
-  padding-left: 50px;
+  padding-left: 30px;
+
 }
 
 .service-item {
@@ -246,13 +248,18 @@ z-index: 5;
   display: inline-block;
   text-align: center;
   margin: auto;
+  margin-top: 80px;
+  margin-right: 20px;
 }
 
 
 .service-item div {
-  padding-top: 20px;
+  padding-top: 50px;
   font-size: 20px;
   display: block;
+  font-family: Open Sans;
+  color: #0E3644;
+  font-weight: 600;
 }
 
 .main1{
