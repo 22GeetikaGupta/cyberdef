@@ -15,7 +15,7 @@ body{
 .container {
   position: absolute;
   width: 100%;
-  top: 250px;
+  top: 280px;
   padding-left: 250px;
   justify-content: center;
   overflow-y: hidden;
@@ -67,7 +67,7 @@ body{
 	line-height: 1px;
 	color: #CDE7EE;
   text-align: center;
-  padding-top: 400px;
+  padding-top: 300px;
 
 
 }
@@ -95,7 +95,7 @@ body{
     opacity: 0.9;
     width: 100%;
     background-size: cover;
-    height: 700px;
+    height: 100%;
 
 
 }
@@ -111,37 +111,69 @@ body{
 
 .nav {
 	background-color: #095A5A ;
-	position: fixed;
+	/*position: relative;*/
+  display: block;
 	width: 100%;
-	z-index: 5;
+  height: 70px;
+	
 
 
 }
 
 
 .nav ul {
-	position: relative;
+  padding-top: 20px;
+   /*display: block;*/
+/*	position: relative;*/
   list-style-type: none;
   margin: 0;
-  padding: 0;
+   /*padding: 30px;*/
   width: 100%;
   
 }
 
 .nav li {
-  float: right;
+  /*float: right;*/
+ display: inline;
 }
 
 .nav li a {
-  display: block;
+  /*display: block;*/
 /*   padding: 14px 16px;
 */   padding-top: 30px;
-padding-bottom: 20px;
+padding-bottom: 40px;
 padding-right: 70px;
 	font-size: 20px;
   /*color: #1B4F72;*/
-  color: white;
+  color: black;
   text-decoration: none;
+}
+
+.nav2 {
+  z-index: 5;
+  width: 100%;
+  height: auto;
+  background-color: #0E3644;
+  display: block;
+  margin-top: 0;
+  padding: 1px;
+ /* position: relative;*/
+}
+.nav2 ul{
+  display: block;
+  font-size: 13px;
+  width: 100%;
+  
+}
+
+.nav2 li{
+  display: inline;
+  border-right: 2px solid black;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 40px;
+  padding-right: 25px;
+  margin-right: 0px;
 }
 
 .footer {

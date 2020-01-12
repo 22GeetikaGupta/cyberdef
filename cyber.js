@@ -60,13 +60,27 @@ window.onload = function() {
 
 var isInViewport = function (elem) {
     var bounding = elem.getBoundingClientRect();
-    console.log(bounding.top + " " + bounding.bottom + " " + window.innerHeight);
+    
     return (
         bounding.top <= (window.innerHeight-300) 
         
       
     );
 };
+
+var atbottom = function(elem){
+  var bounding = elem.getBoundingClientRect();
+  console.log(bounding.bottom);
+  return (bounding.bottom < (window.innerHeight));
+};
+
+var normal = function(elem){
+  var bounding = elem.getBoundingClientRect();
+  console.log(bounding.top);
+  return (bounding.bottom > (window.innerHeight));
+};
+
+
 
 
 
@@ -88,6 +102,18 @@ window.addEventListener("scroll",()=>{
     document.getElementsByClassName('main')[0].style.backgroundColor = "#D0D3D4";
     }
 
-  console.log("sroll");
+    console.log(atbottom(document.getElementsByClassName('nav2')[0]));
+
+    if(atbottom(document.getElementsByClassName('bg')[0])){
+    document.getElementsByClassName('nav2')[0].style.position = "fixed";
+    document.getElementsByClassName('nav2')[0].style.top = 0;
+  }
+
+  if(normal(document.getElementsByClassName('bg')[0])){
+    document.getElementsByClassName('nav2')[0].style.position = "absolute";
+    document.getElementsByClassName('nav2')[0].style.top = "auto";
+  }
+
+  
 });
 
