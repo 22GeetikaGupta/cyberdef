@@ -12,32 +12,39 @@ body{
     margin-right: 0;
 }
 
-.container {
-  position: absolute;
-  width: 100%;
-  top: 280px;
-  padding-left: 250px;
+.container {  
+  position: relative;
+   overflow-y: hidden;
+  top: 200px;
+  /*padding-left: 250px;*/
   justify-content: center;
-  overflow-y: hidden;
+ 
+    width: 70%;
+ margin-left: 20%;
+ height: auto;
+
 }
 
 .static{
-  
+
   display: inline;
 }
 
 .dynamic{
+   
   margin-top: 0px;
   margin-top: 0px;
-  display: inline;
+  display: inline-block;
 }
 
+
 .dynamic ul{
+
   top:0px;
   position: absolute;
   padding: 0px;
   margin-top: 0px;
-  margin-left: 50px;
+  margin-left: 30px;
   display: inline-block;
   list-style-type: none;
   animation-name: change;
@@ -45,14 +52,92 @@ body{
   animation-iteration-count: infinite;
 }
 
-.static span{
+.static{
+  
   color: white;
-  font-size: 80px;
+  font-size: 70px;
 }
 
 .dynamic li {
-  font-size: 80px;
+  font-size: 70px;
 }
+
+@media screen and (max-width: 1050px) and (min-width: 980px){
+  .static{
+    font-size: 65px;
+  }
+  .dynamic li{
+    font-size: 65px;
+  }
+}
+
+@media screen and (max-width: 980px) and (min-width: 935px){
+  .static{
+    font-size: 60px;
+  }
+  .dynamic li{
+    font-size: 60px;
+  }
+}
+
+@media screen and (max-width: 935px) and (min-width: 863px){
+  .static{
+    font-size: 55px;
+  }
+  .dynamic li{
+    font-size: 55px;
+  }
+}
+
+@media screen and (max-width: 863px) and (min-width: 792px){
+  .static {
+    font-size: 50px;
+  }
+  .dynamic li{
+    font-size: 50px;
+  }
+}
+
+@media screen and (max-width: 792px){
+  .static {
+    font-size: 47px;
+  }
+  .dynamic li{
+    font-size: 47px;
+  }
+}
+
+@media screen and (max-width: 750px){
+  .static {
+    width: 80%;
+    display: block;
+    text-align: center;
+    padding-bottom: 20px;
+  }
+  .container {
+    overflow-y: visible;
+  }
+  .dynamic ul{
+    top: 100px;
+   animation-name: change1;
+    position: relative;
+   text-align: center;
+  }
+
+  .dynamic {
+    width: 80%;
+     overflow-y: hidden;
+     height: 70px;
+  }
+}
+
+@keyframes change1 {
+   0%, 100% {transform:translate3d(0,-50%,0);}
+    25.32%,75% {transform:translate3d(0,-90%,0);}
+  50%{transform:translate3d(0,-130%,0);}
+  
+}
+
 
 @keyframes change {
    0%, 100% {transform:translate3d(0,0%,0);}
@@ -64,12 +149,22 @@ body{
 
 .myDiv p {
 	font-size: 30px;
-	line-height: 1px;
-	color: #CDE7EE;
+	line-height: 0.5px;
+	/*color: #CDE7EE;*/
+  color: white;
+  /*color: #0C495F;*/
   text-align: center;
   padding-top: 300px;
 
 
+}
+
+
+@media screen and (max-width: 920px){
+  .myDiv p {
+    padding-top: 250px;
+    font-size: 25px;
+  }
 }
 
 @keyframes example {
@@ -89,10 +184,9 @@ body{
     bottom: 0;
     left: 0;
     right: 0;
-    background-image: url("img5.png");
+    background-image: url(bg4.svg);
     background-repeat: no-repeat;
-  /*  background-size: cover;*/
-    opacity: 0.9;
+    opacity: 1;
     width: 100%;
     background-size: cover;
     height: 100%;
