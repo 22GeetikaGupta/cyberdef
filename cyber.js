@@ -70,8 +70,8 @@ var isInViewport = function (elem) {
 
 var atbottom = function(elem){
   var bounding = elem.getBoundingClientRect();
-  console.log(bounding.bottom);
-  return (bounding.bottom < (window.innerHeight));
+  console.log(bounding.top);
+  return (bounding.top < 1);
 };
 
 var normal = function(elem){
@@ -104,7 +104,7 @@ window.addEventListener("scroll",()=>{
 
     console.log(atbottom(document.getElementsByClassName('nav2')[0]));
 
-    if(atbottom(document.getElementsByClassName('bg')[0])){
+    if(atbottom(document.getElementsByClassName('nav2')[0])){
     document.getElementsByClassName('nav2')[0].style.position = "fixed";
     document.getElementsByClassName('nav2')[0].style.top = 0;
   }
