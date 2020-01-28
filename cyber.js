@@ -89,7 +89,8 @@ window.addEventListener("scroll",()=>{
     if(isInViewport(document.getElementsByClassName('main1')[0])){
     document.getElementsByClassName('main1')[0].style.opacity = 1;
     document.getElementsByClassName('main2')[0].style.opacity = 0;
-     document.getElementsByClassName('main')[0].style.backgroundColor = "white";
+     document.getElementsByClassName('main1')[0].style.backgroundColor = "white";
+      document.getElementsByClassName('main2')[0].style.backgroundColor = "white";
     }
 
     if(!isInViewport(document.getElementsByClassName('main1')[0])){
@@ -99,10 +100,11 @@ window.addEventListener("scroll",()=>{
     if(isInViewport(document.getElementsByClassName('main2')[0])){
     document.getElementsByClassName('main2')[0].style.opacity = 1;
      document.getElementsByClassName('main1')[0].style.opacity = 0;
-    document.getElementsByClassName('main')[0].style.backgroundColor = "#D0D3D4";
+    document.getElementsByClassName('main1')[0].style.backgroundColor = "#D0D3D4";
+    document.getElementsByClassName('main2')[0].style.backgroundColor = "#D0D3D4";
     }
 
-    console.log(atbottom(document.getElementsByClassName('nav2')[0]));
+    
 
     if(atbottom(document.getElementsByClassName('nav2')[0])){
     document.getElementsByClassName('nav2')[0].style.position = "fixed";
