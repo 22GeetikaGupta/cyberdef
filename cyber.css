@@ -5,7 +5,7 @@ body{
 }
 
 .bg2 {
-  background-image: url("img5.png");
+  background-image: url("bg21.png");
   position: fixed;
   z-index: -5;
   width: 100%;
@@ -13,6 +13,7 @@ body{
   margin: auto;
   background-repeat: no-repeat;
   background-size: cover;
+  
 }
 
 .myDiv {
@@ -500,7 +501,7 @@ body{
 
 .whyus {
   width: 100%;
-  height: 400px;
+  height: auto;
   background-color: none;
 }
 
@@ -508,4 +509,47 @@ body{
   width: 100%;
   height: 700px;
   background-color: white;
+}
+
+.pros {
+  list-style-type: none;
+  width: 80%;
+  margin: auto;
+
+}
+
+.pros li {
+
+  color: white;
+  display: inline-block;
+  width: 40%;
+  margin: 20px;
+}
+
+.whyus h2{
+  text-align: center;
+  color: white;
+}
+
+.proimg{
+  display: inline;
+  width: 20%;
+  padding-right: 20px;
+ 
+  /*height: auto;*/
+}
+
+.proimg img{
+  width: 50px;
+  height: auto;
+  display: inline-block;
+  vertical-align: top;
+   padding-top: 20px;
+ /* float: left;*/
+}
+.procon {
+  vertical-align: top;
+  width: 70%;
+  display: inline-block;
+ /* float: right;*/
 }
