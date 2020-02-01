@@ -147,7 +147,7 @@ clients.forEach(i=>{
       });
 }
   
-    setTimeout(clientSlideShow, 2000);
+    setTimeout(clientSlideShow, 1500);
    
     
     
