@@ -487,16 +487,49 @@ body{
 
 }
 
-.client {
+/*.client {
   width: 80%;
   text-align: center;
   padding-top: 30px;
   padding-bottom: 30px;
   list-style: none;
   display: inline-block;
-  /*padding: 30px;
-*/  margin: 10px;
+  margin: 10px;
   border: 2px solid black;
+}*/
+.clients {
+  height: auto;
+}
+.clients h2{
+  text-align: center;
+  
+  font-size: 40px;
+   font-family: 'Lato', sans-serif;
+}
+
+.Client {
+  display: flex;
+ overflow-y: hidden;
+ width: 90%;
+ margin: auto;
+overflow-x: scroll;
+
+}
+
+.Client::-webkit-scrollbar {
+    display: none;
+}
+
+.scrollClient{
+  width: 20%;
+  transition-duration: 1s;
+}
+
+.scrollClient img{
+  width: 200px;
+  padding: 10px;
+  margin: auto;
+  height: auto;
 }
 
 .whyus {
@@ -507,7 +540,7 @@ body{
 
 .hey {
   width: 100%;
-  height: 700px;
+  height: 400px;
   background-color: white;
 }
 

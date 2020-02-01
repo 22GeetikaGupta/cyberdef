@@ -88,9 +88,9 @@ window.addEventListener("scroll",()=>{
   // console.log(isInViewport(document.getElementsByClassName('main')[0]));
     if(isInViewport(document.getElementsByClassName('main1')[0])){
     document.getElementsByClassName('main1')[0].style.opacity = 1;
-    document.getElementsByClassName('main2')[0].style.opacity = 0;
-     document.getElementsByClassName('main1')[0].style.backgroundColor = "white";
-      document.getElementsByClassName('main2')[0].style.backgroundColor = "white";
+    // document.getElementsByClassName('main2')[0].style.opacity = 0;
+     // document.getElementsByClassName('main1')[0].style.backgroundColor = "white";
+     //  document.getElementsByClassName('main2')[0].style.backgroundColor = "white";
     }
 
     if(!isInViewport(document.getElementsByClassName('main1')[0])){
@@ -99,8 +99,8 @@ window.addEventListener("scroll",()=>{
 
     if(isInViewport(document.getElementsByClassName('main2')[0])){
     document.getElementsByClassName('main2')[0].style.opacity = 1;
-     document.getElementsByClassName('main1')[0].style.opacity = 0;
-    document.getElementsByClassName('main1')[0].style.backgroundColor = "#D0D3D4";
+     // document.getElementsByClassName('main1')[0].style.opacity = 0;
+    // document.getElementsByClassName('main1')[0].style.backgroundColor = "#D0D3D4";
     document.getElementsByClassName('main2')[0].style.backgroundColor = "#D0D3D4";
     }
 
@@ -116,6 +116,45 @@ window.addEventListener("scroll",()=>{
     document.getElementsByClassName('nav2')[0].style.top = "auto";
   }
 
-  
+  0
 });
+
+var clients = document.querySelectorAll(".scrollClient");
+  var noOfClients = 0;
+var clientSlide = function(noOfClients){
+    clients.forEach(i=>{
+      i.style.transform = "translate3d("+ noOfClients*(-100) +"%, 0, 0)";
+  });
+
+console.log(noOfClients);
+  noOfClients++;
+}
+
+
+var clientSlideShow = function(){
+noOfClients++;
+  console.log(clients);
+  
+      if(noOfClients>3){
+  clients.forEach(i=>{
+        i.style.transform = "";
+      });
+  noOfClients=0;  
+  }else{
+      console.log(noOfClients);
+clients.forEach(i=>{
+        i.style.transform = "translate3d("+ noOfClients*(-100) +"%, 0, 0)";
+      });
+}
+  
+    setTimeout(clientSlideShow, 2000);
+   
+    
+    
+
+
+  
+};
+
+clientSlideShow();
 
