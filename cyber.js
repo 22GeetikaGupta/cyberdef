@@ -93,9 +93,9 @@ window.addEventListener("scroll",()=>{
      //  document.getElementsByClassName('main2')[0].style.backgroundColor = "white";
     }
 
-    if(!isInViewport(document.getElementsByClassName('main1')[0])){
-      document.getElementsByClassName('main1')[0].style.opacity = 0;
-    }
+    // if(!isInViewport(document.getElementsByClassName('main1')[0])){
+    //   document.getElementsByClassName('main1')[0].style.opacity = 0;
+    // }
 
     if(isInViewport(document.getElementsByClassName('main2')[0])){
     document.getElementsByClassName('main2')[0].style.opacity = 1;
@@ -103,7 +103,9 @@ window.addEventListener("scroll",()=>{
     // document.getElementsByClassName('main1')[0].style.backgroundColor = "#D0D3D4";
     document.getElementsByClassName('main2')[0].style.backgroundColor = "#D0D3D4";
     }
-
+    if(isInViewport(document.getElementsByClassName('clients')[0])){
+       document.getElementsByClassName('clients')[0].style.opacity = 1;
+    }
     
 
     if(atbottom(document.getElementsByClassName('nav2')[0])){
@@ -116,7 +118,7 @@ window.addEventListener("scroll",()=>{
     document.getElementsByClassName('nav2')[0].style.top = "auto";
   }
 
-  0
+  
 });
 
 var clients = document.querySelectorAll(".scrollClient");
@@ -135,7 +137,7 @@ var clientSlideShow = function(){
 noOfClients++;
   console.log(clients);
   
-      if(noOfClients>3){
+      if(noOfClients>4){
   clients.forEach(i=>{
         i.style.transform = "";
       });
@@ -157,4 +159,4 @@ clients.forEach(i=>{
 };
 
 clientSlideShow();
-
+console.log("height of nav2 is " + document.getElementsByClassName('nav2')[0].style.height);

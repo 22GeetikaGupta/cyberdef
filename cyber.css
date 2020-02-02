@@ -266,7 +266,7 @@ body{
 
 
 .nav2 {
-  z-index: 5;
+  z-index: 25;
   width: 100%;
   height: auto;
   background-color: #0E3644;
@@ -348,8 +348,8 @@ body{
 }
 .main2 h2 {
   text-align: center;
-  padding-top: 50px;
-  font-size: 50px;
+  padding-top: 30px;
+  font-size: 40px;
   font-family: PT Serif;
 }
 
@@ -375,7 +375,7 @@ body{
 }
 
 .services li{
-  margin: 30px;
+  margin: 20px;
   list-style: none;
   display: inline-block;
 }
@@ -383,12 +383,13 @@ body{
 
 
 .face{
-    width: 300px;
+    width: 250px;
     height: 200px;
     transition: 0.5s;
 }
 
 .face.face1{
+  vertical-align: top;
     position: relative;
     background: #333;
     display: flex;
@@ -460,49 +461,16 @@ body{
 }
 
 .clients {
-  display: block;
- background-color: white;
   width: 100%;
-  margin: auto;
-  height: 700px;
-}
-.clients img{
-  height: 650px;
-  width: 50%;
-  float: left;
-  display: block;
-}
-
-.clientinfo {
-  width: 50%;
-  float: right;
-  display: block;
-}
-
-.clients h2{
-
-  text-align: center;
-  padding: 15px;
-  font-size: 30px;
-
-}
-
-/*.client {
-  width: 80%;
-  text-align: center;
-  padding-top: 30px;
-  padding-bottom: 30px;
-  list-style: none;
-  display: inline-block;
-  margin: 10px;
-  border: 2px solid black;
-}*/
-.clients {
   height: auto;
+  display: block;
+  opacity: 0;
+  transition-duration: 2s;
+  background-color: white;
 }
 .clients h2{
   text-align: center;
-  
+
   font-size: 40px;
    font-family: 'Lato', sans-serif;
 }
@@ -536,12 +504,6 @@ overflow-x: scroll;
   width: 100%;
   height: auto;
   background-color: none;
-}
-
-.hey {
-  width: 100%;
-  height: 400px;
-  background-color: white;
 }
 
 .pros {
@@ -598,3 +560,60 @@ overflow-x: scroll;
 .procon h3 {
    font-family: 'Slabo 27px', serif;
 }
+
+.howWeWork {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  width: 100%;
+  
+  height: auto;
+  background-color: white;
+}
+
+/*.work2 {
+  width: 90%;
+  margin: auto;
+}
+*/
+.howWeWork h2{
+  text-align: center;
+  font-size: 25px;
+}
+
+.howWeWork .workContent {
+  text-align: center;
+  font-size: 18px;
+  width: 90%;
+  margin: auto;
+}
+
+.howWeWork ul{
+  list-style-type: none;
+  display: inline-block;
+  width: 90%;
+  
+  margin-right: 5%;
+  padding-top: 50px;
+  align-items: center;
+}
+
+.listitem {
+  display: inline-block;
+  height: auto;
+ }
+
+.listitem img{
+  border-radius: 50%;
+  
+  padding: 20px; 
+  width: 130px;
+  
+
+}
+
+.listitem p{
+  text-align: center;
+ font-size: 18px;
+ font-weight: 900px;
+}
+
