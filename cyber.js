@@ -68,6 +68,9 @@ var isInViewport = function (elem) {
     );
 };
 
+
+
+
 var atbottom = function(elem){
   var bounding = elem.getBoundingClientRect();
   console.log(bounding.top);
@@ -108,14 +111,14 @@ window.addEventListener("scroll",()=>{
     }
     
 
-    if(atbottom(document.getElementsByClassName('nav2')[0])){
-    document.getElementsByClassName('nav2')[0].style.position = "fixed";
-    document.getElementsByClassName('nav2')[0].style.top = 0;
+    if(atbottom(document.getElementsByClassName('navbar')[0])){
+    document.getElementsByClassName('navbar')[0].style.position = "fixed";
+    document.getElementsByClassName('navbar')[0].style.top = 0;
   }
 
   if(normal(document.getElementsByClassName('bg')[0])){
-    document.getElementsByClassName('nav2')[0].style.position = "absolute";
-    document.getElementsByClassName('nav2')[0].style.top = "auto";
+    document.getElementsByClassName('navbar')[0].style.position = "absolute";
+    document.getElementsByClassName('navbar')[0].style.top = "auto";
   }
 
   
@@ -132,12 +135,19 @@ console.log(noOfClients);
   noOfClients++;
 }
 
+var width = function(){
+  var w = window.innerWidth;
+  return 0.9*w;
+}
+
 
 var clientSlideShow = function(){
-noOfClients++;
-  console.log(clients);
-  
-      if(noOfClients>4){
+    noOfClients++;
+    var clients = document.querySelectorAll(".scrollClient");
+    console.log(clients.length);
+    var a = Math.floor(width()/220);
+
+      if(noOfClients>clients.length-a){
   clients.forEach(i=>{
         i.style.transform = "";
       });
@@ -159,4 +169,4 @@ clients.forEach(i=>{
 };
 
 clientSlideShow();
-console.log("height of nav2 is " + document.getElementsByClassName('nav2')[0].style.height);
+console.log("height of nav2 is " + document.getElementsByClassName('navbar')[0].style.height);

@@ -138,9 +138,42 @@ body{
   }
 
   .dynamic {
-    width: 80%;
+   /* width: 80%;*/
      overflow-y: hidden;
      height: 70px;
+  }
+}
+
+@media screen and (max-width: 530px){
+    .static{
+      font-size: 43px;
+    }
+    .container {
+      width: 80%;
+      margin: auto;
+    }
+
+}
+
+@media screen and (max-width: 430px){
+    .container {
+      width: 85%;
+      margin: auto;
+    }
+
+}
+
+@media screen and (max-width: 400px){
+    .container {
+      width: 100%;
+      margin: auto;
+    }
+
+}
+
+@media screen and (max-width: 370px){
+  .dynamic li{
+    font-size: 45px;
   }
 }
 
@@ -177,6 +210,26 @@ body{
   .myDiv p {
     padding-top: 250px;
     font-size: 25px;
+  }
+}
+@media screen and (max-width: 480px){
+  .myDiv p {
+    padding-top: 250px;
+    font-size: 22px;
+  }
+}
+
+@media screen and (max-width: 415px){
+  .myDiv p {
+    padding-top: 250px;
+    font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 375px){
+  .myDiv p {
+    padding-top: 250px;
+    font-size: 17px;
   }
 }
 
@@ -253,6 +306,7 @@ body{
   text-decoration: none;
 }
 
+
 .logo img{
   width: 200px;
 
@@ -265,7 +319,7 @@ body{
 }
 
 
-.nav2 {
+/*.nav2 {
   z-index: 25;
   width: 100%;
   height: auto;
@@ -273,7 +327,7 @@ body{
   display: block;
   margin-top: 0;
   padding: 1px;
- /* position: relative;*/
+
 }
 .nav2 ul{
   display: block;
@@ -290,7 +344,158 @@ body{
   padding-left: 40px;
   padding-right: 25px;
   margin-right: 0px;
+}*/
+
+.navbar {
+  z-index: 25;
+  width: 100%;
+  height: auto;
+  background-color: #0E3644;
+  display: block;
+  margin-top: 0;
+  padding: 1px;
+
 }
+
+.navbar ul {
+   width: 100%;
+  list-style-type: none;
+  margin: 0px;
+  padding: 0px;
+  overflow: hidden; 
+  background-color: transparent;
+
+}
+
+.navbar li {
+  color: white;
+  float: left;
+  padding-left: 40px;
+  padding-right: 25px;
+  margin: 0px;
+  border-right: 2px solid black;
+  font-size: 13px;
+    padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.navbar li a {
+  margin: 0px;
+  color: white;
+  
+  /* border-right: 1px solid blue; */
+  transition: 0.2s;
+  display: block;
+  text-align: center;
+/*  line-height: 30px;
+  padding: 10px 16px;*/
+  text-decoration: none;
+}
+
+.dropdown {
+  float: left;
+  overflow: hidden;
+
+}
+
+
+.dropbtn {
+    padding-top: 10px;
+  padding-bottom: 10px;
+    padding-left: 40px;
+  padding-right: 25px;
+  float: left;
+  
+  margin: 0px;
+  border: none;
+  font-size: 13px;
+  color: white;
+  display: block;
+  text-align: center;
+ 
+   background-color: #0E3644;
+  
+  text-decoration: none;
+}
+
+.dropdown-content {
+  display: none;
+  margin-top: 35px;
+  position: absolute;
+  background-color: black;
+  z-index: 53;
+}
+
+.dropdown-content a {
+  float: none;
+  color: white;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  background-color: #0083DF;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color:black;
+}
+
+.show {
+  display: block;
+  background-color: black;
+}
+
+
+
+
+.list1{
+  display: block;
+}
+
+.dropdown:hover .dropdown-content {display: block;}
+
+#myDropdown {
+  
+  background-color: rgb(22,220,250, 0.7);
+  font-weight: bold;
+  transition: 0.2s;
+  z-index: 100;
+}
+
+#myDropdown a:hover {
+  background-color: black;
+  color: white;
+
+  /*transform: scale(1.2);*/
+}
+
+.dropbtn:hover {
+  background-color: black;
+  color: white;
+  transform: scale(1.2);
+}
+
+@media screen and (min-width: 830px){
+  .dropdown {
+    display: none;
+  }
+  
+}
+
+@media screen and (max-width: 830px){
+  .dropdown {
+    display: block;
+  }
+
+  .list{
+    display: none;
+  }
+
+  .list1{
+    display: block;
+  }
+}
+
 
 .main {
   background-color: white;
@@ -299,26 +504,30 @@ body{
 
 
 .main1 {
-  display: block;
+  display: inline-block;
   width: 100%;
   height: auto;
+ text-align: center;
 }
 
 .about1 {
-  width: 40%;
-  display: inline-block;
+  max-width: 450px;
+  margin: auto;
+ display: inline-block;
 }
 
 .about1 img {
   width: 80%;
   height: auto;
+  margin-top: 30px;
 }
 .about2 {
   margin-left: 10px;
-  width: 50%;
+  max-width: 750px;
+  min-width: 300px;
   display: inline-block;
   vertical-align: top;
-  padding-top: 50px;
+  padding-top: 20px;
 }
 .about2 h2{
   font-size: 40px;
@@ -329,14 +538,115 @@ body{
   font-size: 20px;
 }
 
+@media screen and (max-width: 1250px) and (min-width: 1020px){
+    .about1{
+      max-width: 400px;
+    }
+    .about2{
+      max-width: 600px;
+    }
+
+}
+
+@media screen and (max-width: 1020px) and (min-width: 926px){
+      .about2 h2{
+      font-size: 35px;
+    }
+
+    .about2 div{
+      font-size: 18px;
+    }
+        .about2 {
+      margin-left: 2px;
+    }
 
 
+    .about1 {
+      max-width: 370px;
+    }
+
+    .about2{
+      max-width: 550px;
+    }
+}
+
+@media screen and (max-width: 926px) and (min-width: 856px){
+    .about2 h2{
+      font-size: 35px;
+    }
+
+    .about2 div{
+      font-size: 18px;
+    }
+        .about2 {
+      margin-left: 2px;
+    }
+
+    .about1{
+      max-width: 330px;
+    }
+    .about2{
+      max-width: 520px;
+    }
+}
+
+@media screen and (max-width: 856px) and (min-width: 776px){
+    .about2 h2{
+      font-size: 30px;
+    }
+
+    .about2 div{
+      font-size: 15px;
+    }
+        .about2 {
+      margin-left: 2px;
+    }
+
+    .about1{
+      max-width: 300px;
+    }
+    .about2{
+      max-width: 470px;
+    }
+}
+
+@media screen and (max-width: 776px){
+
+    .about2 h2{
+      font-size: 30px;
+    }
+
+    .about2 div{
+      font-size: 15px;
+    }
+    .about2 {
+      margin-left: 2px;
+    }
+    .about1{
+      max-width: 776px;
+      text-align: center;
+    }
+    .about1 img{
+      width: 300px;
+    
+    }
+    .about2{
+      width: 100%;
+
+    }
+
+    .about2 div{
+      padding-right: 10px;
+      padding-left: 10px;
+    }
+}
 
 .main2{
   display: block;
 }
 .main2 h2 {
   text-align: center;
+  margin-bottom: 0px;
   padding-top: 30px;
   font-size: 40px;
   font-family: PT Serif;
@@ -365,6 +675,10 @@ body{
 
 .services li{
   margin: 20px;
+  margin-top: 0px;
+  height: 320px;
+  vertical-align: middle;
+
   list-style: none;
   display: inline-block;
 }
@@ -478,7 +792,7 @@ overflow-x: scroll;
 }
 
 .scrollClient{
-  width: 20%;
+  width: 220px;
   transition-duration: 1s;
 }
 
@@ -549,6 +863,19 @@ overflow-x: scroll;
 .procon h3 {
    font-family: 'Slabo 27px', serif;
 }
+
+@media screen and (max-width: 950px) and (min-width: 600px){
+  .pros li{
+    margin: 10px;
+  }
+}
+
+@media screen and (max-width: 600px){
+  .pros li{
+    width: 90%;
+  }
+}
+
 
 .howWeWork {
   padding-top: 20px;
