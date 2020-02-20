@@ -68,7 +68,7 @@ var isInViewport = function (elem) {
     );
 };
 
-
+console.log("hey");
 
 
 var atbottom = function(elem){
